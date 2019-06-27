@@ -52,7 +52,7 @@
 			payload += mqStr(_q.usr) + mqStr(_q.pwd);
 		}
 		return mqPkt(0b00010000,
-			mqStr("ws")/*protocol name*/+
+			mqStr("WS")/*protocol name*/+
 			sFCC(4/*protocol level*/,flags,255,255/*Keepalive*/), 
 			payload);
 	}
